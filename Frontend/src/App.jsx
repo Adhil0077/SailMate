@@ -1,9 +1,16 @@
 import React from 'react'
+import Header from './components/header'
+import { Outlet } from 'react-router-dom'
+import HomeScreen from './pages/HomeScreen'
+import {Container} from 'react-bootstrap'
 
 function App() {
   return (
     <>
-      <h1>my app</h1>
+    <Header/>
+    <Container className='my-2'>
+    <Outlet/>
+    </Container>
     </>
   )
 }
